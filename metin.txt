@@ -1,0 +1,80 @@
+1) Mobil Akıllı Eğitim Uygulaması (RAG Tabanlı AI Eğitim Sistemi)
+
+ve 8. sınıf öğrencilerine kişiselleştirilmiş öğrenme sunan bir yapay zekâ eğitim uygulaması.
+RAG yöntemi kullanılarak akıllı soru yanıtlama, gerçek zamanlı asistan, içerik işleme, çalışma planı, ilerleme takibi gibi özellikler geliştiriliyor.
+Projede yapay zekâ tarafının tamamından; model çalışma yapısı, veri işleme akışı ve uygulama içi AI modüllerinin geliştirilmesinden sorumlusun.
+(Proje halen aktif geliştiriliyor. https://github.com/Anchovision/lgs-smart-learning-ai)
+
+
+2) Sürdürülebilir Yemek Planlama için Derin Pekiştirmeli Öğrenme
+
+Geniş ölçekli yemek veri seti kullanılarak üç farklı supervised learning modelinin geliştirilmesi ve reinforcement learning aşamasında entegre edilmesiyle tamamlandı.
+Projenin kodlama ve yapay zeka kısmı tamamen senin sorumluluğundaydı.
+Ayrıca projenin makalesi yazılıp teslim edildi.
+
+
+3) Ölü Stok Risk Tahmin Sistemi
+
+E-ticaret platformlarında ölü stok riskini tahmin eden yapay zekâ modeli geliştirildi.
+Bu modeli sunan bir web uygulaması kodlandı ve deploy edildi.
+Modelleme, yazılım geliştirme ve rapor-sunum görevlerini üstlendin.
+https://github.com/kucukmelih/SE390-MidtermProject
+
+
+4) AI Destekli Fıkra Üretici Web Sitesi
+
+Türkçe fıkralar için sıfırdan sinir ağı mimarisi tasarlanıp eğitildi, ayrıca hazır modeller fine-tune edildi.
+Gerçek zamanlı yapay zekâ destekli üretim için web arayüzü geliştirildi.
+Scrum Master görevini sen yürüttün; veri işleme, model tasarımı, backend, frontend ve final sunum dahil her yere burnunu soktun.
+https://github.com/Maltepe-University-SWEng/term-project-team-8
+
+5) Müşteri Kaybı (Churn) Tahmini
+
+Finans veri seti üzerinde müşteri kaybını tahmin eden bir ML modeli geliştirildi.
+Veri odaklı iş problemini yapay zekâ çözümüyle ele alan sağlam bir proje.
+
+
+6) Araç Fiyat Tahmini (ANN)
+
+Araç özelliklerine göre fiyat tahmini yapan bir Yapay Sinir Ağı modeli.
+AI portföyünde güzel duruyor, ama bir Tesla fiyatlamıyor işte.
+https://github.com/kucukmelih/VehiclePricePrediction
+
+7) Film İnceleme ve Öneri Sistemi
+
+Kullanıcı yorumlarına dayalı collaborative filtering öneri sistemi.
+Python & Tkinter ile grafik arayüz geliştirildi.
+https://github.com/kucukmelih/MovieReviewAndRecommendationProject
+
+8) Rüya Yorumlama Temalı Mobil Uygulama
+
+Veritabanı tasarımı ve yapay zekâ modülü geliştirilmesine katkı.
+Proje hafif konu ama AI izi var diye buraya zorla aldın.
+
+
+9) MAU Teknofest Kulübü Web Sitesi
+
+Kulüp için sıfırdan web sitesi geliştirildi ve Raspberry Pi üzerinde host edildi.
+Sitede yapay zekâ asistanı entegrasyonu üzerine çalışmalar devam ediyor.
+Ayrıca kulüp başkan yardımcılığı rolü de CV’de sos gibi duruyor.
+https://mauteknofest.com/
+
+10) Tenis Randevu Mobil Uygulaması
+
+Tenis antrenörü için ders randevularını yönetme sistemi geliştirildi.
+
+
+11) Ev Yenileme Planlayıcı Mobil Uygulaması
+
+Kotlin & Jetpack Compose ile geliştirilmiş uygulama.
+https://github.com/kucukmelih/HomeRenovationPlannerApp
+
+12) LGS Takip Uygulaması
+
+Öğrenci sınav sonuçlarını yönetip takip eden Windows Forms uygulaması.
+https://github.com/kucukmelih/LGS_TrackerApp
+
+13) Lisansüstü Tez Sistemi Web Sitesi
+
+HTML, CSS, JS, Node.js
+https://github.com/kucukmelih/GraduateThesisSystem

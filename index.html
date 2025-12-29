@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melih Küçük</title>
+    <link rel="website icon" type="png" href="images/TR.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Yeseva+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="backdrop" aria-hidden="true"></div>
+
+    <header class="site-header">
+        <nav class="nav" id="site-nav">
+            <a class="logo" href="#Home">MK</a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#Home" data-tr="ANA SAYFA" data-en="HOME">HOME</a></li>
+                <li><a href="#About" data-tr="HAKKIMDA" data-en="ABOUT ME">ABOUT ME</a></li>
+                <li><a href="#Projects" data-tr="PROJELER" data-en="PROJECTS">PROJECTS</a></li>
+                <li><a href="#Resume" data-tr="ÖZGEÇMİŞ" data-en="RESUME">RESUME</a></li>
+                <li><a href="#Contact" data-tr="İLETİŞİM" data-en="CONTACT">CONTACT</a></li>
+            </ul>
+            <div class="controls">
+                <button class="toggle" id="lang-toggle" type="button" aria-pressed="false">TR</button>
+                <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <button class="toggle" id="theme-toggle" type="button" aria-pressed="false" aria-label="Tema degistir">
+                    <svg class="theme-icon icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <circle cx="12" cy="12" r="4"></circle>
+                        <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+                    </svg>
+                    <svg class="theme-icon icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="Home" class="hero">
+            <div class="hero-text">
+                <p class="hero-eyebrow" data-tr="Merhaba, ben" data-en="Hello, I'm">Merhaba, ben</p>
+                <h1>Melih Küçük</h1>
+                <p class="hero-subtitle" data-tr="&quot;Anchovy&quot; • Yazılım Mühendisliği Öğrencisi • Yapay Zeka, Veri Bilimi, Mobil" data-en="&quot;Anchovy&quot; • Software Engineering Student • AI, Data Science & Mobile">&quot;Anchovy&quot; • Yazılım Mühendisliği Öğrencisi • Yapay Zeka, Veri Bilimi, Mobil</p>
+                <p class="hero-intro" data-tr="Yapay zeka, veri bilimi ve mobil geliştirme odaklı 4. sınıf Yazılım Mühendisliği öğrencisiyim. Projeler, stajlar ve liderlik rolleriyle Big Data ve ML/DL alanlarında uygulamalı deneyim kazandım." data-en="Fourth-year Software Engineering student specializing in AI, Data Science, and Mobile Development. Hands-on experience in Big Data and ML/DL through projects, internships, and leadership roles.">Yapay zeka, veri bilimi ve mobil geliştirme odaklı 4. sınıf Yazılım Mühendisliği öğrencisiyim. Projeler, stajlar ve liderlik rolleriyle Big Data ve ML/DL alanlarında uygulamalı deneyim kazandım.</p>
+                <div class="hero-cta">
+                    <a class="cta" href="#Resume" data-tr="ÖZGEÇMİŞE GİT" data-en="GO TO RESUME">ÖZGEÇMİŞE GİT</a>
+                    <a class="cta ghost" href="#Projects" data-tr="PROJELERİ GÖR" data-en="VIEW PROJECTS">PROJELERİ GÖR</a>
+                </div>
+            </div>
+            <div class="hero-card">
+                <img class="profile-photo" src="images/melih-kucuk.JPG" alt="Melih Küçük">
+                <p class="card-title" data-tr="Kısa Profil" data-en="Quick Profile">Kısa Profil</p>
+                <p class="card-text" data-tr="Maltepe Üniversitesi Teknofest Kulübü Başkan Yardımcısı ve Innova'da Data Science stajyeri olarak teknik uzmanlığı proje koordinasyonu ile birleştirdim." data-en="Vice President of the Maltepe University Teknofest Club and former Data Science intern at Innova, combining technical depth with project coordination.">Maltepe Üniversitesi Teknofest Kulübü Başkan Yardımcısı ve Innova'da Data Science stajyeri olarak teknik uzmanlığı proje koordinasyonu ile birleştirdim.</p>
+                <div class="socials">
+                    <a href="https://www.linkedin.com/in/kucukmelih/" class="social" target="_blank" rel="noopener noreferrer">
+                        <img src="images/linkedin.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://github.com/kucukmelih" class="social" target="_blank" rel="noopener noreferrer">
+                        <img src="images/github.png" alt="GitHub">
+                    </a>
+                    <a href="https://www.kaggle.com/kucukmelih" class="social" target="_blank" rel="noopener noreferrer">
+                        <img src="images/kaggle.png" alt="Kaggle">
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCmpTqhPGVQJqAD1drRCefhQ" class="social" target="_blank" rel="noopener noreferrer">
+                        <img src="images/youtube.png" alt="YouTube">
+                    </a>
+                    <a href="#" class="social social-text">Anchovision</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="About" class="section">
+            <div class="section-head">
+                <p class="section-tag" data-tr="Hakkımda" data-en="About Me">Hakkımda</p>
+                <h2 data-tr="Beni kısaca tanı" data-en="A short intro">Beni kısaca tanı</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p data-tr="Yapay Zeka, Veri Bilimi ve Mobil Geliştirme alanlarında uzmanlaşan 4. sınıf Yazılım Mühendisliği öğrencisiyim. Akademik projeler, stajlar ve liderlik rolleri sayesinde Big Data ve ML/DL konularında uygulamalı deneyim edindim." data-en="I am a 4th-year Software Engineering student specializing in Artificial Intelligence, Data Science, and Mobile Development. Through academic projects, internships, and leadership roles, I have gained hands-on experience in Big Data and ML/DL.">Yapay Zeka, Veri Bilimi ve Mobil Geliştirme alanlarında uzmanlaşan 4. sınıf Yazılım Mühendisliği öğrencisiyim. Akademik projeler, stajlar ve liderlik rolleri sayesinde Big Data ve ML/DL konularında uygulamalı deneyim edindim.</p>
+                    <p data-tr="Maltepe Üniversitesi Teknofest Kulübü Başkan Yardımcısı ve Innova'da Data Science stajyeri olarak teknik uzmanlığı proje koordinasyonu ve ekip yönetimiyle birleştirdim." data-en="As Vice President of the Maltepe University Teknofest Club and a Data Science intern at Innova, I combined technical expertise with project coordination and team management.">Maltepe Üniversitesi Teknofest Kulübü Başkan Yardımcısı ve Innova'da Data Science stajyeri olarak teknik uzmanlığı proje koordinasyonu ve ekip yönetimiyle birleştirdim.</p>
+                    <p data-tr="Bu dönem sonunda derslerimi tamamlıyor olacağım; sonraki döneme yalnızca bitirme projesinin ikinci kısmı kalacak. Bu sayede boş bir dönemi uzun dönem staj fırsatlarına ayırmayı hedefliyorum." data-en="By the end of this semester, I will have completed all my coursework, with only the second part of my capstone project remaining for the next term. This gives me a free semester, which I aim to dedicate to long-term internship opportunities.">Bu dönem sonunda derslerimi tamamlıyor olacağım; sonraki döneme yalnızca bitirme projesinin ikinci kısmı kalacak. Bu sayede boş bir dönemi uzun dönem staj fırsatlarına ayırmayı hedefliyorum.</p>
+                </div>
+                <div class="about-list">
+                    <h3 data-tr="Odak Alanlarım" data-en="Focus Areas">Odak Alanlarım</h3>
+                    <ul>
+                        <li data-tr="Yapay Zeka ve Veri Bilimi" data-en="Artificial Intelligence & Data Science">Yapay Zeka ve Veri Bilimi</li>
+                        <li data-tr="Makine Öğrenimi / Derin Öğrenme" data-en="Machine Learning / Deep Learning">Makine Öğrenimi / Derin Öğrenme</li>
+                        <li data-tr="Big Data ve Veri Yönetimi" data-en="Big Data & Data Management">Big Data ve Veri Yönetimi</li>
+                        <li data-tr="Mobil Uygulama Geliştirme" data-en="Mobile Development">Mobil Uygulama Geliştirme</li>
+                        <li data-tr="Proje Koordinasyonu ve Liderlik" data-en="Project Coordination & Leadership">Proje Koordinasyonu ve Liderlik</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="Projects" class="section">
+            <div class="section-head">
+                <p class="section-tag" data-tr="Projeler" data-en="Projects">Projeler</p>
+                <h2 data-tr="Son dönemde üzerinde çalıştıklarım" data-en="Recent work">Son dönemde üzerinde çalıştıklarım</h2>
+            </div>
+            <div class="projects-toolbar">
+                <p class="projects-hint" data-tr="Oklarla gez" data-en="Use the arrows to navigate">Oklarla gez</p>
+                <div class="projects-nav" role="group" aria-label="Projects navigation" data-label-tr="Projeler gezintisi" data-label-en="Projects navigation" title="Projects navigation">
+                    <button class="projects-nav-btn" type="button" data-dir="prev" data-label-tr="Önceki projeler" data-label-en="Previous projects" aria-label="Önceki projeler" title="Önceki projeler">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                            <path d="M15 6l-6 6 6 6"></path>
+                        </svg>
+                    </button>
+                    <button class="projects-nav-btn" type="button" data-dir="next" data-label-tr="Sonraki projeler" data-label-en="Next projects" aria-label="Sonraki projeler" title="Sonraki projeler">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                            <path d="M9 6l6 6-6 6"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-body">
+                        <h3 data-tr="Mobil Akıllı Eğitim Uygulaması (RAG Tabanlı AI Eğitim Sistemi)" data-en="Smart Mobile Learning App (RAG-Based AI Education System)">Mobil Akıllı Eğitim Uygulaması (RAG Tabanlı AI Eğitim Sistemi)</h3>
+                        <p data-tr="8. sınıf öğrencilerine kişiselleştirilmiş öğrenme sunan yapay zekâ eğitim uygulaması. RAG ile akıllı soru yanıtlama, gerçek zamanlı asistan, içerik işleme, çalışma planı ve ilerleme takibi geliştiriliyor. Yapay zekâ tarafının tamamından sorumluyum; model çalışma yapısı, veri işleme akışı ve uygulama içi AI modülleri." data-en="AI education app for 8th-grade students delivering personalized learning. RAG powers smart Q&A, a real-time assistant, content processing, study plans, and progress tracking. I own the AI side: model workflow, data processing pipeline, and in-app AI modules.">8. sınıf öğrencilerine kişiselleştirilmiş öğrenme sunan yapay zekâ eğitim uygulaması. RAG ile akıllı soru yanıtlama, gerçek zamanlı asistan, içerik işleme, çalışma planı ve ilerleme takibi geliştiriliyor. Yapay zekâ tarafının tamamından sorumluyum; model çalışma yapısı, veri işleme akışı ve uygulama içi AI modülleri.</p>
+                        <p class="project-tech">
+                            <span class="tech-text" data-tr="Teknolojiler: RAG, LLM, Veri İşleme, Python" data-en="Tech Stack: RAG, LLMs, Data Pipelines, Python">Teknolojiler: RAG, LLM, Veri İşleme, Python</span>
+                        </p>
+                        <div class="project-links">
+                            <a class="project-link" href="https://github.com/Anchovision/lgs-smart-learning-ai" target="_blank" rel="noopener noreferrer" data-label-tr="Projeyi Gör" data-label-en="View Project" aria-label="Projeyi Gör" title="Projeyi Gör">
+                                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                    <path d="M14 3h7v7"></path>
+                                    <path d="M10 14L21 3"></path>
+                                    <path d="M21 14v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"></path>
+                                </svg>
+                            </a>
+                            <span class="tech-icons" aria-hidden="true">
+                                <svg class="tech-icon icon-python" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                    <rect x="3" y="3" width="18" height="18" rx="4"></rect>
+                                    <text x="12" y="12" text-anchor="middle" dominant-baseline="central">PY</text>
+                                </svg>
+                                <svg class="tech-icon icon-rag" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                    <rect x="3" y="3" width="18" height="18" rx="4"></rect>
+                                    <text class="icon-text-sm" x="12" y="12" text-anchor="middle" dominant-baseline="central">RAG</text>
+                                </svg>
+                                <svg class="tech-icon icon-llm" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                    <rect x="3" y="3" width="18" height="18" rx="4"></rect>
+                                    <text class="icon-text-sm" x="12" y="12" text-anchor="middle" dominant-baseline="central">LLM</text>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-body">
+                        <h3 data-tr="Sürdürülebilir Yemek Planlama için Derin Pekiştirmeli Öğrenme" data-en="Deep Reinforcement Learning for Sustainable Meal Planning">Sürdürülebilir Yemek Planlama için Derin Pekiştirmeli Öğrenme</h3>
+                        <p data-tr="Geniş ölçekli yemek veri setiyle üç supervised model geliştirildi ve reinforcement learning aşamasında entegre edildi. Projenin kodlama ve yapay zekâ kısmı tamamen bende; makalesi yazılıp teslim edildi." data-en="Built three supervised models on a large-scale meal dataset and integrated them into the reinforcement learning stage. I handled all coding and AI work; the paper was written and submitted.">Geniş ölçekli yemek veri setiyle üç supervised model geliştirildi ve reinforcement learning aşamasında entegre edildi. Projenin kodlama ve yapay zekâ kısmı tamamen bende; makalesi yazılıp teslim edildi.</p>
+                        <p class="project-tech">
+                            <span class="tech-text" data-tr="Teknolojiler: Python, Supervised Learning, Reinforcement Learning" data-en="Tech Stack: Python, Supervised Learning, Reinforcement Learning">Teknolojiler: Python, Supervised Learning, Reinforcement Learning</span>
+                        </p>
+                        <div class="project-links">
+                            <a class="project-link is-disabled" href="#" aria-disabled="true" tabindex="-1" data-label-tr="Projeyi Gör" data-label-en="View Project" aria-label="Projeyi Gör" title="Projeyi Gör">
+                                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                    <path d="M14 3h7v7"></path>
+                                    <path d="M10 14L21 3"></path>
+                                    <path d="M21 14v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"></path>
+                                </svg>
+                            </a>
+                            <span class="tech-icons" aria-hidden="true">
+                                <svg class="tech-icon icon-python" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                    <rect x="3" y="3" width="18" height="18" rx="4"></rect>
+                                    <text x="12" y="12" text-anchor="middle" dominant-baseline="central">PY</text>
+                                </svg>
+                                <svg class="tech-icon icon-sl" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                    <rect x="3" y="3" width="18" height="18" rx="4"></rect>
+                                    <text x="12" y="12" text-anchor="middle" dominant-baseline="central">SL</text>
+                                </svg>
+                                <svg class="tech-icon icon-rl" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                    <rect x="3" y="3" width="18" height="18" rx="4"></rect>
+                                    <text x="12" y="12" text-anchor="middle" dominant-baseline="central">RL</text>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-body">
+                        <h3 data-tr="Ölü Stok Risk Tahmin Sistemi" data-en="Dead Stock Risk Prediction System">Ölü Stok Risk Tahmin Sistemi</h3>
+                        <p data-tr="E-ticaret platformlarında ölü stok riskini tahmin eden yapay zekâ modeli geliştirildi. Bu modeli sunan web uygulaması kodlandı ve deploy edildi. Modelleme, yazılım geliştirme, rapor ve sunum görevlerini üstlendim." data-en="Built an AI model to predict dead-stock risk for e-commerce platforms and delivered a deployed web app. I owned modeling, software development, reporting, and presentation.">E-ticaret platformlarında ölü stok riskini tahmin eden yapay zekâ modeli geliştirildi. Bu modeli sunan web uygulaması kodlandı ve deploy edildi. Modelleme, yazılım geliştirme, rapor ve sunum görevlerini üstlendim.</p>
+                        <p class="project-tech">
+                            <span class="tech-text" data-tr="Teknolojiler: Python, ML, Web Uygulama, Deployment" data-en="Tech Stack: Python, ML, Web App, Deployment">Teknolojiler: Python, ML, Web Uygulama, Deployment</span>
+                        </p>
+                        <div class="project-links">
+                            <a class="project-link" href="https://github.com/kucukmelih/SE390-MidtermProject" target="_blank" rel="noopener noreferrer" data-label-tr="Projeyi Gör" data-label-en="View Project" aria-label="Projeyi Gör" title="Projeyi Gör">
+                                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                    <path d="M14 3h7v7"></path>
+                                    <path d="M10 14L21 3"></path>
+                                    <path d="M21 14v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"></path>
+                                </svg>
+                            </a>
+                            <span class="tech-icons" aria-hidden="true">
+                                <svg class="tech-icon icon-python" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                    <rect x="3" y="3" width="18" height="18" rx="4"></rect>
+                                    <text x="12" y="12" text-anchor="middle" dominant-baseline="central">PY</text>
+                                </svg>
+                                <svg class="tech-icon icon-ml" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                    <rect x="3" y="3" width="18" height="18" rx="4"></rect>
+                                    <text x="12" y="12" text-anchor="middle" dominant-baseline="central">ML</text>
+                                </svg>
+                                <svg class="tech-icon icon-dep" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                    <rect x="3" y="3" width="18" height="18" rx="4"></rect>
+                                    <text class="icon-text-sm" x="12" y="12" text-anchor="middle" dominant-baseline="central">DEP</text>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-body">
+                        <h3 data-tr="AI Destekli Fıkra Üretici Web Sitesi" data-en="AI-Powered Joke Generator Website">AI Destekli Fıkra Üretici Web Sitesi</h3>
+                        <p data-tr="Türkçe fıkralar için sıfırdan sinir ağı mimarisi tasarlanıp eğitildi, ayrıca hazır modeller fine-tune edildi. Gerçek zamanlı yapay zekâ destekli üretim için web arayüzü geliştirildi. Scrum Master olarak veri işleme, model tasarımı, backend, frontend ve final sunum dahil her aşamada rol aldım." data-en="Designed and trained a custom neural network for Turkish jokes and fine-tuned pretrained models. Built a real-time AI web interface. As Scrum Master, I was involved in data processing, model design, backend, frontend, and the final presentation.">Türkçe fıkralar için sıfırdan sinir ağı mimarisi tasarlanıp eğitildi, ayrıca hazır modeller fine-tune edildi. Gerçek zamanlı yapay zekâ destekli üretim için web arayüzü geliştirildi. Scrum Master olarak veri işleme, model tasarımı, backend, frontend ve final sunum dahil her aşamada rol aldım.</p>
+                        <p class="project-tech">
+                            <span class="tech-text" data-tr="Teknolojiler: Python, NLP, Deep Learning, Web" data-en="Tech Stack: Python, NLP, Deep Learning, Web">Teknolojiler: Python, NLP, Deep Learning, Web</span>
+                        </p>
+                        <div class="project-links">
+                            <a class="project-link" href="https://github.com/Maltepe-University-SWEng/term-project-team-8" target="_blank" rel="noopener noreferrer" data-label-tr="Projeyi Gör" data-label-en="View Project" aria-label="Projeyi Gör" title="Projeyi Gör">
+                                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                    <path d="M14 3h7v7"></path>
+                                    <path d="M10 14L21 3"></path>
+                                    <path d="M21 14v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"></path>
+                                </svg>
+                            </a>
+                            <span class="tech-icons" aria-hidden="true">
+                                <svg class="tech-icon icon-python" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                    <rect x="3" y="3" width="18" height="18" rx="4"></rect>
+                                    <text x="12" y="12" text-anchor="middle" dominant-baseline="central">PY</text>
+                                </svg>
+                                <svg class="tech-icon icon-nlp" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                    <rect x="3" y="3" width="18" height="18" rx="4"></rect>
+                                    <text class="icon-text-sm" x="12" y="12" text-anchor="middle" dominant-baseline="central">NLP</text>
+                                </svg>
+                                <svg class="tech-icon icon-dl" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                    <rect x="3" y="3" width="18" height="18" rx="4"></rect>
+                                    <text x="12" y="12" text-anchor="middle" dominant-baseline="central">DL</text>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-body">
+                        <h3 data-tr="Müşteri Kaybı (Churn) Tahmini" data-en="Customer Churn Prediction">Müşteri Kaybı (Churn) Tahmini</h3>
+                        <p data-tr="Finans veri seti üzerinde müşteri kaybını tahmin eden bir ML modeli geliştirildi. Veri odaklı iş problemini yapay zekâ çözümüyle ele alan sağlam bir proje." data-en="Built an ML model to predict churn on a financial dataset, addressing a data-driven business problem with AI.">Finans veri seti üzerinde müşteri kaybını tahmin eden bir ML modeli geliştirildi. Veri odaklı iş problemini yapay zekâ çözümüyle ele alan sağlam bir proje.</p>
+                        <p class="project-tech">
+                            <span class="tech-text" data-tr="Teknolojiler: Python, Machine Learning" data-en="Tech Stack: Python, Machine Learning">Teknolojiler: Python, Machine Learning</span>
+                        </p>
+                        <div class="project-links">
+                            <a class="project-link is-disabled" href="#" aria-disabled="true" tabindex="-1" data-label-tr="Projeyi Gör" data-label-en="View Project" aria-label="Projeyi Gör" title="Projeyi Gör">
+                                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                    <path d="M14 3h7v7"></path>
+                                    <path d="M10 14L21 3"></path>
+                                    <path d="M21 14v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"></path>
+                                </svg>
+                            </a>
+                            <span class="tech-icons" aria-hidden="true">
+                                <svg class="tech-icon icon-python" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                    <rect x="3" y="3" width="18" height="18" rx="4"></rect>
+                                    <text x="12" y="12" text-anchor="middle" dominant-baseline="central">PY</text>
+                                </svg>
+                                <svg class="tech-icon icon-ml" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                    <rect x="3" y="3" width="18" height="18" rx="4"></rect>
+                                    <text x="12" y="12" text-anchor="middle" dominant-baseline="central">ML</text>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-body">
+                        <h3 data-tr="Araç Fiyat Tahmini (ANN)" data-en="Vehicle Price Prediction (ANN)">Araç Fiyat Tahmini (ANN)</h3>
+                        <p data-tr="Araç özelliklerine göre fiyat tahmini yapan yapay sinir ağı modeli. AI portföyünde güzel duruyor, ama bir Tesla fiyatlamıyor işte." data-en="Neural network model that predicts vehicle prices based on features. Looks great in the AI portfolio, though it won't price a Tesla.">Araç özelliklerine göre fiyat tahmini yapan yapay sinir ağı modeli. AI portföyünde güzel duruyor, ama bir Tesla fiyatlamıyor işte.</p>
+                        <p class="project-tech">
+                            <span class="tech-text" data-tr="Teknolojiler: Python, ANN" data-en="Tech Stack: Python, ANN">Teknolojiler: Python, ANN</span>
+                        </p>
+                        <div class="project-links">
+                            <a class="project-link" href="https://github.com/kucukmelih/VehiclePricePrediction" target="_blank" rel="noopener noreferrer" data-label-tr="Projeyi Gör" data-label-en="View Project" aria-label="Projeyi Gör" title="Projeyi Gör">
+                                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                    <path d="M14 3h7v7"></path>
+                                    <path d="M10 14L21 3"></path>
+                                    <path d="M21 14v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"></path>
+                                </svg>
+                            </a>
+                            <span class="tech-icons" aria-hidden="true">
+                                <svg class="tech-icon icon-python" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                    <rect x="3" y="3" width="18" height="18" rx="4"></rect>
+                                    <text x="12" y="12" text-anchor="middle" dominant-baseline="central">PY</text>
+                                </svg>
+                                <svg class="tech-icon icon-ann" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                    <rect x="3" y="3" width="18" height="18" rx="4"></rect>
+                                    <text class="icon-text-sm" x="12" y="12" text-anchor="middle" dominant-baseline="central">ANN</text>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-body">
+                        <h3 data-tr="Film İnceleme ve Öneri Sistemi" data-en="Movie Review & Recommendation System">Film İnceleme ve Öneri Sistemi</h3>
+                        <p data-tr="Kullanıcı yorumlarına dayalı collaborative filtering öneri sistemi. Python ve Tkinter ile grafik arayüz geliştirildi." data-en="Collaborative filtering-based recommendation system driven by user reviews, with a GUI built using Python and Tkinter.">Kullanıcı yorumlarına dayalı collaborative filtering öneri sistemi. Python ve Tkinter ile grafik arayüz geliştirildi.</p>
+                        <p class="project-tech">
+                            <span class="tech-text" data-tr="Teknolojiler: Python, Tkinter, Collaborative Filtering" data-en="Tech Stack: Python, Tkinter, Collaborative Filtering">Teknolojiler: Python, Tkinter, Collaborative Filtering</span>
+                        </p>
+                        <div class="project-links">
+                            <a class="project-link" href="https://github.com/kucukmelih/MovieReviewAndRecommendationProject" target="_blank" rel="noopener noreferrer" data-label-tr="Projeyi Gör" data-label-en="View Project" aria-label="Projeyi Gör" title="Projeyi Gör">
+                                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                    <path d="M14 3h7v7"></path>
+                                    <path d="M10 14L21 3"></path>
+                                    <path d="M21 14v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"></path>
+                                </svg>
+                            </a>
+                            <span class="tech-icons" aria-hidden="true">
+                                <svg class="tech-icon icon-python" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                    <rect x="3" y="3" width="18" height="18" rx="4"></rect>
+                                    <text x="12" y="12" text-anchor="middle" dominant-baseline="central">PY</text>
+                                </svg>
+                                <svg class="tech-icon icon-tk" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                    <rect x="3" y="3" width="18" height="18" rx="4"></rect>
+                                    <text x="12" y="12" text-anchor="middle" dominant-baseline="central">TK</text>
+                                </svg>
+                                <svg class="tech-icon icon-cf" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                    <rect x="3" y="3" width="18" height="18" rx="4"></rect>
+                                    <text x="12" y="12" text-anchor="middle" dominant-baseline="central">CF</text>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-body">
+                        <h3 data-tr="Rüya Yorumlama Temalı Mobil Uygulama" data-en="Dream Interpretation Themed Mobile App">Rüya Yorumlama Temalı Mobil Uygulama</h3>
+                        <p data-tr="Veritabanı tasarımı ve yapay zekâ modülü geliştirilmesine katkı sağlandı. Proje hafif ama AI izi var diye burada." data-en="Contributed to database design and the AI module. The project is light, but it has an AI footprint.">Veritabanı tasarımı ve yapay zekâ modülü geliştirilmesine katkı sağlandı. Proje hafif ama AI izi var diye burada.</p>
+                        <p class="project-tech">
+                            <span class="tech-text" data-tr="Teknolojiler: Mobil Uygulama, Veritabanı, AI Modülü" data-en="Tech Stack: Mobile App, Database, AI Module">Teknolojiler: Mobil Uygulama, Veritabanı, AI Modülü</span>
+                        </p>
+                        <div class="project-links">
+                            <a class="project-link is-disabled" href="#" aria-disabled="true" tabindex="-1" data-label-tr="Projeyi Gör" data-label-en="View Project" aria-label="Projeyi Gör" title="Projeyi Gör">
+                                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                    <path d="M14 3h7v7"></path>
+                                    <path d="M10 14L21 3"></path>
+                                    <path d="M21 14v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"></path>
+                                </svg>
+                            </a>
+                            <span class="tech-icons" aria-hidden="true">
+                                <svg class="tech-icon icon-app" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                    <rect x="3" y="3" width="18" height="18" rx="4"></rect>
+                                    <text class="icon-text-sm" x="12" y="12" text-anchor="middle" dominant-baseline="central">APP</text>
+                                </svg>
+                                <svg class="tech-icon icon-db" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                    <rect x="3" y="3" width="18" height="18" rx="4"></rect>
+                                    <text x="12" y="12" text-anchor="middle" dominant-baseline="central">DB</text>
+                                </svg>
+                                <svg class="tech-icon icon-ai" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                    <rect x="3" y="3" width="18" height="18" rx="4"></rect>
+                                    <text x="12" y="12" text-anchor="middle" dominant-baseline="central">AI</text>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-body">
+                        <h3 data-tr="MAU Teknofest Kulübü Web Sitesi" data-en="MAU Teknofest Club Website">MAU Teknofest Kulübü Web Sitesi</h3>
+                        <p data-tr="Kulüp için sıfırdan web sitesi geliştirildi ve Raspberry Pi üzerinde host edildi. Yapay zekâ asistanı entegrasyonu için çalışmalar devam ediyor." data-en="Built the club website from scratch and hosted it on a Raspberry Pi. Work continues on AI assistant integration.">Kulüp için sıfırdan web sitesi geliştirildi ve Raspberry Pi üzerinde host edildi. Yapay zekâ asistanı entegrasyonu için çalışmalar devam ediyor.</p>
+                        <p class="project-tech">
+                            <span class="tech-text" data-tr="Teknolojiler: HTML, CSS, JavaScript, Raspberry Pi" data-en="Tech Stack: HTML, CSS, JavaScript, Raspberry Pi">Teknolojiler: HTML, CSS, JavaScript, Raspberry Pi</span>
+                        </p>
+                        <div class="project-links">
+                            <a class="project-link" href="https://mauteknofest.com/" target="_blank" rel="noopener noreferrer" data-label-tr="Projeyi Gör" data-label-en="View Project" aria-label="Projeyi Gör" title="Projeyi Gör">
+                                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                    <path d="M14 3h7v7"></path>
+                                    <path d="M10 14L21 3"></path>
+                                    <path d="M21 14v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"></path>
+                                </svg>
+                            </a>
+                            <span class="tech-icons" aria-hidden="true">
+                                <svg class="tech-icon icon-h5" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                    <rect x="3" y="3" width="18" height="18" rx="4"></rect>
+                                    <text x="12" y="12" text-anchor="middle" dominant-baseline="central">H5</text>
+                                </svg>
+                                <svg class="tech-icon icon-c3" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                    <rect x="3" y="3" width="18" height="18" rx="4"></rect>
+                                    <text x="12" y="12" text-anchor="middle" dominant-baseline="central">C3</text>
+                                </svg>
+                                <svg class="tech-icon icon-js" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                    <rect x="3" y="3" width="18" height="18" rx="4"></rect>
+                                    <text x="12" y="12" text-anchor="middle" dominant-baseline="central">JS</text>
+                                </svg>
+                                <svg class="tech-icon icon-pi" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                    <rect x="3" y="3" width="18" height="18" rx="4"></rect>
+                                    <text x="12" y="12" text-anchor="middle" dominant-baseline="central">PI</text>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-body">
+                        <h3 data-tr="Tenis Randevu Mobil Uygulaması" data-en="Tennis Appointment Mobile App">Tenis Randevu Mobil Uygulaması</h3>
+                        <p data-tr="Tenis antrenörü için ders randevularını yönetme sistemi geliştirildi." data-en="Built a scheduling system for a tennis coach to manage lesson appointments.">Tenis antrenörü için ders randevularını yönetme sistemi geliştirildi.</p>
+                        <p class="project-tech">
+                            <span class="tech-text" data-tr="Teknolojiler: Mobil Uygulama, Takvim Yönetimi" data-en="Tech Stack: Mobile App, Scheduling">Teknolojiler: Mobil Uygulama, Takvim Yönetimi</span>
+                        </p>
+                        <div class="project-links">
+                            <a class="project-link is-disabled" href="#" aria-disabled="true" tabindex="-1" data-label-tr="Projeyi Gör" data-label-en="View Project" aria-label="Projeyi Gör" title="Projeyi Gör">
+                                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                    <path d="M14 3h7v7"></path>
+                                    <path d="M10 14L21 3"></path>
+                                    <path d="M21 14v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"></path>
+                                </svg>
+                            </a>
+                            <span class="tech-icons" aria-hidden="true">
+                                <svg class="tech-icon icon-app" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                    <rect x="3" y="3" width="18" height="18" rx="4"></rect>
+                                    <text class="icon-text-sm" x="12" y="12" text-anchor="middle" dominant-baseline="central">APP</text>
+                                </svg>
+                                <svg class="tech-icon icon-cal" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                    <rect x="3" y="3" width="18" height="18" rx="4"></rect>
+                                    <text class="icon-text-sm" x="12" y="12" text-anchor="middle" dominant-baseline="central">CAL</text>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-body">
+                        <h3 data-tr="Ev Yenileme Planlayıcı Mobil Uygulaması" data-en="Home Renovation Planner Mobile App">Ev Yenileme Planlayıcı Mobil Uygulaması</h3>
+                        <p data-tr="Kotlin ve Jetpack Compose ile geliştirilmiş mobil uygulama." data-en="Mobile app built with Kotlin and Jetpack Compose.">Kotlin ve Jetpack Compose ile geliştirilmiş mobil uygulama.</p>
+                        <p class="project-tech">
+                            <span class="tech-text" data-tr="Teknolojiler: Kotlin, Jetpack Compose" data-en="Tech Stack: Kotlin, Jetpack Compose">Teknolojiler: Kotlin, Jetpack Compose</span>
+                        </p>
+                        <div class="project-links">
+                            <a class="project-link" href="https://github.com/kucukmelih/HomeRenovationPlannerApp" target="_blank" rel="noopener noreferrer" data-label-tr="Projeyi Gör" data-label-en="View Project" aria-label="Projeyi Gör" title="Projeyi Gör">
+                                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                    <path d="M14 3h7v7"></path>
+                                    <path d="M10 14L21 3"></path>
+                                    <path d="M21 14v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"></path>
+                                </svg>
+                            </a>
+                            <span class="tech-icons" aria-hidden="true">
+                                <svg class="tech-icon icon-kotlin" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                    <rect x="3" y="3" width="18" height="18" rx="4"></rect>
+                                    <text x="12" y="12" text-anchor="middle" dominant-baseline="central">KT</text>
+                                </svg>
+                                <svg class="tech-icon icon-cmp" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                    <rect x="3" y="3" width="18" height="18" rx="4"></rect>
+                                    <text class="icon-text-sm" x="12" y="12" text-anchor="middle" dominant-baseline="central">CMP</text>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-body">
+                        <h3 data-tr="LGS Takip Uygulaması" data-en="LGS Tracker App">LGS Takip Uygulaması</h3>
+                        <p data-tr="Öğrenci sınav sonuçlarını yönetip takip eden Windows Forms uygulaması." data-en="Windows Forms app to manage and track student exam results.">Öğrenci sınav sonuçlarını yönetip takip eden Windows Forms uygulaması.</p>
+                        <p class="project-tech">
+                            <span class="tech-text" data-tr="Teknolojiler: C#, Windows Forms" data-en="Tech Stack: C#, Windows Forms">Teknolojiler: C#, Windows Forms</span>
+                        </p>
+                        <div class="project-links">
+                            <a class="project-link" href="https://github.com/kucukmelih/LGS_TrackerApp" target="_blank" rel="noopener noreferrer" data-label-tr="Projeyi Gör" data-label-en="View Project" aria-label="Projeyi Gör" title="Projeyi Gör">
+                                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                    <path d="M14 3h7v7"></path>
+                                    <path d="M10 14L21 3"></path>
+                                    <path d="M21 14v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"></path>
+                                </svg>
+                            </a>
+                            <span class="tech-icons" aria-hidden="true">
+                                <svg class="tech-icon icon-csharp" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                    <rect x="3" y="3" width="18" height="18" rx="4"></rect>
+                                    <text x="12" y="12" text-anchor="middle" dominant-baseline="central">C#</text>
+                                </svg>
+                                <svg class="tech-icon icon-win" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                    <rect x="3" y="3" width="18" height="18" rx="4"></rect>
+                                    <text class="icon-text-sm" x="12" y="12" text-anchor="middle" dominant-baseline="central">WIN</text>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-body">
+                        <h3 data-tr="Lisansüstü Tez Sistemi Web Sitesi" data-en="Graduate Thesis System Website">Lisansüstü Tez Sistemi Web Sitesi</h3>
+                        <p data-tr="HTML, CSS, JavaScript ve Node.js kullanılarak geliştirildi." data-en="Built using HTML, CSS, JavaScript, and Node.js.">HTML, CSS, JavaScript ve Node.js kullanılarak geliştirildi.</p>
+                        <p class="project-tech">
+                            <span class="tech-text" data-tr="Teknolojiler: HTML, CSS, JavaScript, Node.js" data-en="Tech Stack: HTML, CSS, JavaScript, Node.js">Teknolojiler: HTML, CSS, JavaScript, Node.js</span>
+                        </p>
+                        <div class="project-links">
+                            <a class="project-link" href="https://github.com/kucukmelih/GraduateThesisSystem" target="_blank" rel="noopener noreferrer" data-label-tr="Projeyi Gör" data-label-en="View Project" aria-label="Projeyi Gör" title="Projeyi Gör">
+                                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                    <path d="M14 3h7v7"></path>
+                                    <path d="M10 14L21 3"></path>
+                                    <path d="M21 14v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"></path>
+                                </svg>
+                            </a>
+                            <span class="tech-icons" aria-hidden="true">
+                                <svg class="tech-icon icon-h5" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                    <rect x="3" y="3" width="18" height="18" rx="4"></rect>
+                                    <text x="12" y="12" text-anchor="middle" dominant-baseline="central">H5</text>
+                                </svg>
+                                <svg class="tech-icon icon-c3" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                    <rect x="3" y="3" width="18" height="18" rx="4"></rect>
+                                    <text x="12" y="12" text-anchor="middle" dominant-baseline="central">C3</text>
+                                </svg>
+                                <svg class="tech-icon icon-js" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                    <rect x="3" y="3" width="18" height="18" rx="4"></rect>
+                                    <text x="12" y="12" text-anchor="middle" dominant-baseline="central">JS</text>
+                                </svg>
+                                <svg class="tech-icon icon-njs" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                    <rect x="3" y="3" width="18" height="18" rx="4"></rect>
+                                    <text class="icon-text-sm" x="12" y="12" text-anchor="middle" dominant-baseline="central">NJS</text>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="Resume" class="section">
+            <div class="section-head">
+                <p class="section-tag" data-tr="Özgeçmiş" data-en="Resume">Özgeçmiş</p>
+                <h2 data-tr="Detaylı CV" data-en="Download my CV">Detaylı CV</h2>
+            </div>
+            <div class="resume-card">
+                <p data-tr="CV dosyamı buradan indirebilirsin. Aşağıda öne çıkan deneyim ve becerilerimi görebilirsin." data-en="Download my CV here. Highlights of my experience and skills are below.">CV dosyamı buradan indirebilirsin. Aşağıda öne çıkan deneyim ve becerilerimi görebilirsin.</p>
+                <a class="cta" href="Melih%20KUCUK%20-%20CV.pdf" download data-tr="CV'yi indir" data-en="Download CV">CV'yi indir</a>
+            </div>
+            <div class="resume-grid">
+                <div class="resume-block">
+                    <h3 data-tr="Deneyim" data-en="Experience">Deneyim</h3>
+                    <div class="resume-item">
+                        <h4 data-tr="Innova Bilişim, Türk Telekom — Veri Bilimi ve ve Veri Yönetimi Stajyeri" data-en="Innova Bilişim, Türk Telekom — Data Science and Data Management Intern">Innova Bilişim — Veri Bilimi ve Veri Yönetimi Stajyeri</h4>
+                        <p class="resume-meta" data-tr="Haziran 2025 – Temmuz 2025" data-en="June 2025 – July 2025">Haziran 2025 – Temmuz 2025</p>
+                        <p data-tr="Veri bilimi ve big data projelerinde çalışarak veri işleme, analiz ve ilgili araçlarda uygulamalı deneyim kazandım." data-en="Worked on data science and big data projects, gaining hands-on experience in data processing, analysis, and related tools.">Veri bilimi ve big data projelerinde çalışarak veri işleme, analiz ve ilgili araçlarda uygulamalı deneyim kazandım.</p>
+                    </div>
+                    <div class="resume-item">
+                        <h4 data-tr="Maltepe Üniversitesi Teknofest Kulübü — Başkan Yardımcısı" data-en="Maltepe University Teknofest Club — Vice President">Maltepe Üniversitesi Teknofest Kulübü — Başkan Yardımcısı</h4>
+                        <p class="resume-meta" data-tr="Ağustos 2025 – Devam ediyor" data-en="August 2025 – Present">Ağustos 2025 – Devam ediyor</p>
+                        <p data-tr="Kulüp faaliyetlerini koordine ettim, projeleri yönettim ve etkinlik/yarışma organizasyonlarında liderliği destekledim." data-en="Coordinated club activities, managed projects, and supported leadership in organizing events and competitions.">Kulüp faaliyetlerini koordine ettim, projeleri yönettim ve etkinlik/yarışma organizasyonlarında liderliği destekledim.</p>
+                    </div>
+                </div>
+                <div class="resume-block">
+                    <h3 data-tr="Eğitim" data-en="Education">Eğitim</h3>
+                    <div class="resume-item">
+                        <h4 data-tr="Maltepe Üniversitesi — Yazılım Mühendisliği (İng)" data-en="Maltepe University — Software Engineering (EN)">Maltepe Üniversitesi — Yazılım Mühendisliği (İng)</h4>
+                        <p class="resume-meta" data-tr="2021 – Devam ediyor • Diploma Notu 3.04" data-en="2021 – Present • GPA 3.04">2021 – Devam ediyor • Diploma Notu 3.04</p>
+                    </div>
+                    <div class="resume-item">
+                        <h4 data-tr="YÖK Veri Analizi Okulu — Yapay Zeka 1 ve 2 Modülleri" data-en="YÖK Data Analysis School — AI Modules 1 and 2">YÖK Veri Analizi Okulu — Yapay Zeka Modülü</h4>
+                        <p class="resume-meta" data-tr="2025 – Devam ediyor" data-en="2025 – Present">2025 – Devam ediyor</p>
+                    </div>
+                    <div class="resume-item">
+                        <h4 data-tr="Amasya Kutlubey Fen Lisesi" data-en="Amasya Kutlubey Science High School">Amasya Kutlubey Fen Lisesi</h4>
+                        <p class="resume-meta" data-tr="2021 • Diploma Notu 94.91" data-en="2021 • GPA 94.91">2021 • Diploma Notu 94.91</p>
+                    </div>
+                </div>
+                <div class="resume-block">
+                    <h3 data-tr="Beceriler" data-en="Skills">Beceriler</h3>
+                    <div class="skill-list">
+                        <span>Python</span>
+                        <span>Kotlin</span>
+                        <span>C</span>
+                        <span>SQL</span>
+                        <span>MySQL, MSSQL, PostgreSQL, Cassandra</span>
+                        <span>Spark, Hadoop, Kafka, Maven, Airflow</span>
+                        <span>Docker, Virtual Machine, Git</span>
+                        <span data-tr="Makine Öğrenimi, Derin Öğrenme, RAG" data-en="Machine Learning, Deep Learning, RAG">Makine Öğrenimi, Derin Öğrenme, RAG</span>
+                        <span data-tr="Veri Bilimi, Big Data, Veri Yönetimi" data-en="Data Science, Big Data, Data Management">Veri Bilimi, Big Data, Veri Yönetimi</span>
+                        <span data-tr="Mobil Programlama" data-en="Mobile Programming">Mobil Programlama</span>
+                        <span>HTML, CSS, Figma</span>
+                        <span data-tr="İngilizce (B2)" data-en="English (B2)">İngilizce (B2)</span>
+                        <span data-tr="Türkçe (Ana Dil)" data-en="Turkish (Native)">Türkçe (Ana Dil)</span>
+                        <span data-tr="Yapay Zeka Araçlarını Etkin Kullanım" data-en="Effective Use of AI Tools">Yapay Zeka Araçlarını Etkin Kullanım</span>
+                    </div>
+                </div>
+                <div class="resume-block">
+                    <h3 data-tr="Sertifikalar" data-en="Certificates">Sertifikalar</h3>
+                    <ul class="certificate-list">
+                        <li>Machine Learning Specialization — DeepLearning.AI & Stanford University</li>
+                        <li>11th International Symposium on Digital Forensics and Security</li>
+                        <li>Data Science and Machine Learning — Udemy, Vahit Keskin</li>
+                        <li>CS50's Introduction to Programming with Python — Harvard University</li>
+                        <li>Turkcell Geleceği Yazanlar — Advanced Python</li>
+                        <li>LangChain, LangGraph, RAG, LLM Orchestration — Udemy, Atil Samancioglu</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="Contact" class="section">
+            <div class="section-head">
+                <p class="section-tag" data-tr="İletişim" data-en="Contact">İletişim</p>
+                <h2 data-tr="Benimle bağlantı kur" data-en="Let’s connect">Benimle bağlantı kur</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <p data-tr="Aşağıda iletişim bilgilerimi bulabilirsin. Telefon bilgisini netleştirdiğimde güncelleyeceğim." data-en="You can find my contact details below.">Aşağıda iletişim bilgilerimi bulabilirsin.</p>
+                    <ul>
+                        <li><span data-tr="E-posta" data-en="Email">E-posta</span>: kucuk.melih@outlook.com</li>
+                        <li><span data-tr="Telefon" data-en="Phone">Telefon</span>: +90 (533) 017 17 61</li>
+                        <li><span data-tr="LinkedIn" data-en="LinkedIn">LinkedIn</span>: <a href="https://www.linkedin.com/in/kucukmelih" target="_blank" rel="noopener noreferrer">linkedin.com/in/kucukmelih</a></li>
+                        <li><span data-tr="GitHub" data-en="GitHub">GitHub</span>: <a href="https://github.com/kucukmelih" target="_blank" rel="noopener noreferrer">github.com/kucukmelih</a></li>
+                        <li><span data-tr="Adres" data-en="Address">Adres</span>: <span data-tr="Maltepe, İstanbul" data-en="Maltepe, Istanbul">Maltepe, İstanbul</span></li>
+                    </ul>
+                </div>
+                <div class="contact-action">
+                    <p data-tr="Doğrudan e-posta göndermek için butonu kullanabilirsin." data-en="Use the button below to send me an email directly.">Doğrudan e-posta göndermek için butonu kullanabilirsin.</p>
+                    <a class="cta" href="mailto:kucuk.melih@outlook.com" data-tr="E-POSTA GÖNDER" data-en="SEND EMAIL">E-POSTA GÖNDER</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p data-tr="© 2025 Melih Küçük. Tüm hakları saklıdır." data-en="© 2025 Melih Küçük. All rights reserved.">© 2025 Melih Küçük. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script>
+        const root = document.documentElement;
+        const langToggle = document.getElementById('lang-toggle');
+        const themeToggle = document.getElementById('theme-toggle');
+        const navToggle = document.getElementById('nav-toggle');
+        const navLinks = document.getElementById('nav-links');
+        const nav = document.getElementById('site-nav');
+        const translatables = document.querySelectorAll('[data-tr][data-en]');
+        const labelTranslatables = document.querySelectorAll('[data-label-tr][data-label-en]');
+        const projectsGrid = document.querySelector('.projects-grid');
+        const projectsNavButtons = document.querySelectorAll('.projects-nav-btn');
+
+        function setLanguage(lang) {
+            root.dataset.lang = lang;
+            document.documentElement.lang = lang === 'tr' ? 'tr' : 'en';
+            translatables.forEach((el) => {
+                const text = el.dataset[lang];
+                if (text) {
+                    el.textContent = text;
+                }
+            });
+            labelTranslatables.forEach((el) => {
+                const label = lang === 'tr' ? el.dataset.labelTr : el.dataset.labelEn;
+                if (label) {
+                    el.setAttribute('aria-label', label);
+                    el.setAttribute('title', label);
+                }
+            });
+            langToggle.textContent = lang === 'tr' ? 'EN' : 'TR';
+            langToggle.setAttribute('aria-pressed', lang === 'en');
+            localStorage.setItem('lang', lang);
+        }
+
+        function setTheme(theme) {
+            root.dataset.theme = theme;
+            const isDark = theme === 'dark';
+            themeToggle.setAttribute('aria-pressed', theme === 'dark');
+            themeToggle.setAttribute('aria-label', isDark ? 'Aydinlik moda gec' : 'Koyu moda gec');
+            themeToggle.setAttribute('title', isDark ? 'Light mode' : 'Dark mode');
+            localStorage.setItem('theme', theme);
+        }
+
+        langToggle.addEventListener('click', () => {
+            const next = root.dataset.lang === 'tr' ? 'en' : 'tr';
+            setLanguage(next);
+        });
+
+        themeToggle.addEventListener('click', () => {
+            const next = root.dataset.theme === 'dark' ? 'light' : 'dark';
+            setTheme(next);
+        });
+
+        navToggle.addEventListener('click', () => {
+            const isOpen = nav.classList.toggle('is-open');
+            navToggle.setAttribute('aria-expanded', isOpen);
+        });
+
+        navLinks.addEventListener('click', (event) => {
+            if (event.target.tagName === 'A' && nav.classList.contains('is-open')) {
+                nav.classList.remove('is-open');
+                navToggle.setAttribute('aria-expanded', 'false');
+            }
+        });
+
+        function getProjectScrollStep() {
+            if (!projectsGrid) {
+                return 0;
+            }
+            const card = projectsGrid.querySelector('.project-card');
+            if (!card) {
+                return 0;
+            }
+            const styles = window.getComputedStyle(projectsGrid);
+            const gap = parseFloat(styles.gap || styles.columnGap || '0') || 0;
+            return card.getBoundingClientRect().width + gap;
+        }
+
+        projectsNavButtons.forEach((button) => {
+            button.addEventListener('click', () => {
+                if (!projectsGrid) {
+                    return;
+                }
+                const direction = button.dataset.dir === 'next' ? 1 : -1;
+                const step = getProjectScrollStep();
+                const maxScroll = projectsGrid.scrollWidth - projectsGrid.clientWidth;
+                const threshold = 8;
+                const current = projectsGrid.scrollLeft;
+
+                if (direction > 0 && current >= maxScroll - threshold) {
+                    projectsGrid.scrollTo({ left: 0, behavior: 'smooth' });
+                    return;
+                }
+
+                if (direction < 0 && current <= threshold) {
+                    projectsGrid.scrollTo({ left: maxScroll, behavior: 'smooth' });
+                    return;
+                }
+
+                projectsGrid.scrollBy({ left: direction * step, behavior: 'smooth' });
+            });
+        });
+
+        const storedLang = localStorage.getItem('lang') || 'tr';
+        const storedTheme = localStorage.getItem('theme') || 'light';
+        setLanguage(storedLang);
+        setTheme(storedTheme);
+    </script>
+</body>
+</html>
