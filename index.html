@@ -582,6 +582,23 @@
                     event.stopPropagation();
                 }
             });
+
+            projectsGrid.addEventListener('wheel', (event) => {
+                if (!projectsGrid || projectsGrid.scrollWidth <= projectsGrid.clientWidth) {
+                    return;
+                }
+                const isVerticalScroll = Math.abs(event.deltaY) > Math.abs(event.deltaX);
+                if (!isVerticalScroll) {
+                    return;
+                }
+                const maxScroll = projectsGrid.scrollWidth - projectsGrid.clientWidth;
+                const next = Math.min(maxScroll, Math.max(0, projectsGrid.scrollLeft + event.deltaY));
+                if (next === projectsGrid.scrollLeft) {
+                    return;
+                }
+                event.preventDefault();
+                projectsGrid.scrollLeft = next;
+            }, { passive: false });
         }
 
         const storedLang = localStorage.getItem('lang') || 'tr';
