@@ -422,11 +422,19 @@ main {
 
 .projects-grid {
     display: flex;
-    gap: 28px;
-    overflow-x: hidden;
+    gap: 22px;
+    overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     overscroll-behavior-x: contain;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    cursor: grab;
+}
+
+.projects-grid.is-dragging {
+    cursor: grabbing;
+    user-select: none;
 }
 
 .project-card {
@@ -438,7 +446,7 @@ main {
     display: flex;
     flex-direction: column;
     min-height: 100%;
-    flex: 0 0 clamp(260px, 32vw, 380px);
+    flex: 0 0 clamp(240px, 28vw, 340px);
     scroll-snap-align: start;
     box-shadow: var(--shadow);
     background-image: linear-gradient(145deg, rgba(29, 155, 240, 0.12), transparent 55%);
@@ -513,167 +521,30 @@ main {
 }
 
 .project-body {
-    padding: 28px;
+    padding: 22px;
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 10px;
     height: 100%;
 }
 
 .project-body h3 {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     margin-bottom: 6px;
-}
-
-.project-tech {
-    font-weight: 600;
-    color: var(--muted);
-    display: inline-flex;
     align-self: flex-start;
-    align-items: center;
-    gap: 10px;
-    flex-wrap: wrap;
-    padding: 6px 12px;
-    border-radius: 999px;
-    border: 1px solid var(--border);
-    background: var(--bg-alt);
-    font-size: 0.85rem;
-    line-height: 1.4;
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 14px;
+    background: rgba(47, 109, 246, 0.12);
+    color: var(--text);
+    border: 1px solid rgba(47, 109, 246, 0.2);
 }
 
-.tech-icons {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
+:root[data-theme="dark"] .project-body h3 {
+    background: rgba(69, 192, 255, 0.18);
+    border-color: rgba(69, 192, 255, 0.3);
 }
 
-.tech-icon {
-    width: 20px;
-    height: 20px;
-    fill: currentColor;
-    stroke: none;
-}
-
-.tech-icon text {
-    font-family: "Space Grotesk", "Helvetica Neue", sans-serif;
-    font-size: 7px;
-    font-weight: 700;
-    letter-spacing: 0.2px;
-    fill: #fff;
-}
-
-.tech-icon text.icon-text-sm {
-    font-size: 6px;
-    letter-spacing: 0.1px;
-}
-
-.tech-icon.icon-python {
-    color: #3776ab;
-}
-
-.tech-icon.icon-rag {
-    color: #7c3aed;
-}
-
-.tech-icon.icon-llm {
-    color: #9333ea;
-}
-
-.tech-icon.icon-sl {
-    color: #22c55e;
-}
-
-.tech-icon.icon-rl {
-    color: #0ea5e9;
-}
-
-.tech-icon.icon-ml {
-    color: #2563eb;
-}
-
-.tech-icon.icon-dep {
-    color: #f97316;
-}
-
-.tech-icon.icon-nlp {
-    color: #38bdf8;
-}
-
-.tech-icon.icon-dl {
-    color: #3b82f6;
-}
-
-.tech-icon.icon-ann {
-    color: #6366f1;
-}
-
-.tech-icon.icon-tk {
-    color: #475569;
-}
-
-.tech-icon.icon-cf {
-    color: #f59e0b;
-}
-
-.tech-icon.icon-app {
-    color: #22c55e;
-}
-
-.tech-icon.icon-db {
-    color: #0d9488;
-}
-
-.tech-icon.icon-ai {
-    color: #a855f7;
-}
-
-.tech-icon.icon-cal {
-    color: #84cc16;
-}
-
-.tech-icon.icon-kotlin {
-    color: #7f52ff;
-}
-
-.tech-icon.icon-cmp {
-    color: #06b6d4;
-}
-
-.tech-icon.icon-csharp {
-    color: #512bd4;
-}
-
-.tech-icon.icon-win {
-    color: #00a4ef;
-}
-
-.tech-icon.icon-h5 {
-    color: #e34f26;
-}
-
-.tech-icon.icon-c3 {
-    color: #1572b6;
-}
-
-.tech-icon.icon-js {
-    color: #f7df1e;
-}
-
-.tech-icon.icon-js text {
-    fill: #111827;
-}
-
-.tech-icon.icon-pi {
-    color: #c51a4a;
-}
-
-.tech-icon.icon-njs {
-    color: #339933;
-}
-
-.tech-text {
-    flex: 1 1 auto;
-}
 
 .project-links {
     display: flex;
