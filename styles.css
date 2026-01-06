@@ -139,29 +139,29 @@ a {
     cursor: pointer;
     align-items: center;
     justify-content: center;
-    gap: 4px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.nav-toggle span {
-    width: 18px;
-    height: 2px;
-    background: var(--text);
-    border-radius: 999px;
+.nav-toggle .menu-icon {
+    width: 20px;
+    height: 20px;
+    stroke: currentColor;
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.nav-toggle .icon-close {
+    display: none;
+}
+
+.nav.is-open .nav-toggle .icon-burger {
+    display: none;
+}
+
+.nav.is-open .nav-toggle .icon-close {
     display: block;
-    transition: transform 0.2s ease, opacity 0.2s ease;
-}
-
-.nav.is-open .nav-toggle span:nth-child(1) {
-    transform: translateY(6px) rotate(45deg);
-}
-
-.nav.is-open .nav-toggle span:nth-child(2) {
-    opacity: 0;
-}
-
-.nav.is-open .nav-toggle span:nth-child(3) {
-    transform: translateY(-6px) rotate(-45deg);
 }
 
 .toggle {
